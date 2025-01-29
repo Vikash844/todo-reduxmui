@@ -92,9 +92,9 @@ const TodoList = () => {
                 </Typography>
             ) : (
                 <List>
-                    {
+                    {/* {
                         console.log(filteredTasks)
-                    }
+                    } */}
                     {filteredTasks.map((task)    => (
                         <ListItem
                             key={task.id}
