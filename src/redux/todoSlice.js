@@ -30,7 +30,7 @@ const todoSlice = createSlice({
             const { id, newText } = action.payload;
             const task = state.tasks.find((task) => task.id === id);
             if (task) {
-                task.text = newText;
+                task.text.text = newText;
                 localStorage.setItem('tasks', JSON.stringify(state.tasks));
             }
         },

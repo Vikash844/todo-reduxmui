@@ -92,9 +92,9 @@ const TodoList = () => {
                 </Typography>
             ) : (
                 <List>
-                    {/* {
+                    {
                         console.log(filteredTasks)
-                    } */}
+                    }
                     {filteredTasks.map((task)    => (
                         <ListItem
                             key={task.id}
@@ -147,7 +147,7 @@ const TodoList = () => {
                                     <MenuItem value="completed">Completed</MenuItem>
                                 </Select>
                                 {editId !== task.id && (
-                                    <IconButton edge="end" onClick={() => handleEdit(task.id, task.text)} color="primary">
+                                    <IconButton edge="end" onClick={() => handleEdit(task.id, task.text.text)} color="primary">
                                         <CiEdit />
                                     </IconButton>
                                 )}
